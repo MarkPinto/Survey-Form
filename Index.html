@@ -1,9 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Survey Form</title>
 </head>
 <body>
+	<h1 id="title">Survey Form</h1>
+	<p id="description">This is a survey form</p>
+	<form id="survey-form">
+		
+		<!-- Text fields for basic info -->
+		<label id="name-label">Name:</label>
+		<input type="text" id="name" name="Name" placeholder="Enter your name" required>
+		<label id="email-label">Email:</label>
+		<input type="email" id="email" name="Email" placeholder="Enter your email" required>
+		<label id="number-label">Age:</label>
+		<input type="number" id="number" name="Age" placeholder="Age" min="18" max="100">
+		
+		<!-- Dropdown menu for Gender -->
+		<label>Gender:</label>
+		<select id="dropdown" name="Gender">
+			<option>Male</option>
+			<option>Female</option>
+			<option>Other</option>
+			<option>Prefer not to disclose</option>
+		</select>
 
+		<!-- Radio Buttons -->
+		<br>
+		<label>Ethinicity:</label>
+		<input type="radio" name="ethinicity" value="Caucasian"> Caucasian
+		<input type="radio" name="ethinicity" value="Asian"> Asian
+		<input type="radio" name="ethinicity" value="Hispanic"> Hispanic
+		<input type="radio" name="ethinicity" value="Black"> Black
+		<input type="radio" name="ethinicity" value="No Disclosure"> Prefer not to disclose
+
+		<!-- Checkboxes -->
+		<br>
+		<label>Education:</label>
+		<input type="checkbox" name="education" value="GED"> GED Diploma
+		<input type="checkbox" name="education" value="Highschool"> Highschool Diploma
+		<input type="checkbox" name="education" value="Associate"> Associate's Degree
+		<input type="checkbox" name="education" value="Bachelor"> Bachelor's Degree
+		<input type="checkbox" name="education" value="Master"> Master's Degree
+		<input type="checkbox" name="education" value="Doctor"> Doctor of Philosophy
+
+		<!-- Text area for other comments -->
+		<br>
+		<textarea placeholder="Enter any additional comments here"></textarea>
+
+		<!-- Submit button -->
+		<br>
+		<input type="Submit" id="submit" name="Submit">
+
+	</form>
 </body>
 </html>
